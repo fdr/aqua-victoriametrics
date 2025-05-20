@@ -1,0 +1,14 @@
+packages:
+  - type: github_release
+    name: victoria-metrics
+    repo_owner: VictoriaMetrics
+    repo_name: VictoriaMetrics
+    asset: victoria-metrics-{{.OS}}-{{.Arch}}-{{.Version}}.tar.gz
+    bin: victoria-metrics-prod
+    rename: victoria-metrics
+    supported_envs:
+      - darwin/amd64
+      - darwin/arm64
+      - linux/amd64
+      - linux/arm64
+    version_prefix: "v"
